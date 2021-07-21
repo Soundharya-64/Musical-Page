@@ -76,7 +76,7 @@
         }
         .icon .icon-h p{
               color: white;
-              margin-left: 135px;
+              margin-left: 145px;
               font-size: 20px;
           }
         .icon .quote p{
@@ -154,6 +154,23 @@
     opacity: 0;
   }
 }
+.footer{
+  position:fixed;
+  left:0;
+  bottom:0;
+  background:rgb(49, 2, 70);
+ width:100%;
+ line-height: 50px;
+text-align: center;
+ color: white;
+ font-size: 30px;
+padding:10px;
+ 
+}
+.footer .fab{
+  color:white;
+  font-size:30px;
+}
 
 
 
@@ -203,6 +220,7 @@
               margin:25px;
               margin-top:80px;
           }
+          
         }
     </style>
   </head>
@@ -216,7 +234,7 @@
            <label class="logo">Sound.</label>
            <ul>
                <li><a class="active" href="#">Home</a></li>
-               <li><a href="#">About</a></li>
+               <li><a href="about.html">About</a></li>
                <li><a href="#">Services</a></li>
                <li><a href="#">Collections</a></li>
                <li><a href="#">Contact us</a></li>
@@ -263,9 +281,7 @@
       <audio id="mySong">
         <source src="music1.mp3" type="audio/mp3">
       </audio>
-      <div>
-
-      </div>
+      
       <script>
         var mySong=document.getElementById("mySong");
         var sym=document.getElementById("sym");
@@ -278,7 +294,12 @@
           }
         }
       </script>
-
+      <div class="footer">
+        <a href="https://github.com/Soundharya-64"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/soundharya-g-539b261a1/"><i class="fab fa-linkedin"></i></a>
+        &copy;Copyright2021
+      </div>
+        
     </body>
         
 </html>
