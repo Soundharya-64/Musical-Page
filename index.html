@@ -72,7 +72,13 @@
             margin-right: 50px;
             font-size: 300px;
             color: rgb(49, 2, 70);
+            cursor: pointer;
         }
+        .icon .icon-h p{
+              color: white;
+              margin-left: 135px;
+              font-size: 20px;
+          }
         .icon .quote p{
             font-family:'Merienda',cursive;
             background:white;
@@ -186,7 +192,11 @@
           }
           .icon .fas {
               font-size: 100px;
-              margin:50px;
+              margin:50px 50px 15px 50px;
+          }
+          .icon .icon-h p{
+            font-size:10px;
+            margin-left: 60px;
           }
           .icon .quote p{
               font-size: 10px;
@@ -197,7 +207,7 @@
     </style>
   </head>
     <body>
-        <iframe style="display:none;" width="560" height="315" src="https://youtu.be/embed/EOOpLK90_7Q?rel=0&autoplay=1&muted=1" allow="autoplay" frameborder="0" allowfullscreen></iframe>
+      <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/z8CmVih6WDg?autoplay=1&mute=1&loop=1" frameborder="0" allowfullscreen ></iframe>-->
        <nav>
         <input type="checkbox" id="check">
         <label for="check" class="checkbtn">
@@ -228,7 +238,10 @@
       </div>
       
       <div class="icon">
-        <i class="fas fa-headphones"></i>
+        <div class="icon-h">
+        <i class="fas fa-headphones" id="sym"></i>
+        <p>Click Here to Listen</p>
+        </div>
         <div class="quote">
             <p>More than an art, MUSIC is an emotion. Let us enjoy the music and spread the smile...</p>
         </div>
@@ -247,7 +260,24 @@
         &#9834;
       </div>
       </div>
-      
+      <audio id="mySong">
+        <source src="music1.mp3" type="audio/mp3">
+      </audio>
+      <div>
+
+      </div>
+      <script>
+        var mySong=document.getElementById("mySong");
+        var sym=document.getElementById("sym");
+
+        sym.onclick =function(){
+          if(mySong.paused){
+            mySong.play();
+          }else{
+            mySong.pause();
+          }
+        }
+      </script>
 
     </body>
         
